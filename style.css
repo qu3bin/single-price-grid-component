@@ -1,0 +1,155 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: hsl(204, 43%, 93%);
+    color: hsl(0, 0%, 100%);
+    display: flex;
+    font-family: 'Karla', sans-serif;
+    font-weight: 400;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+main {
+    border-radius: 10px;
+    margin: 10vh auto;
+    overflow: hidden;
+    width: 315px;
+}
+
+article {
+    background-color: hsl(0, 0%, 100%);
+}
+
+h1 {
+    color: hsl(179, 62%, 43%);
+    font-size: 1.3rem;
+}
+
+h2 {
+    font-size: 1.2rem;
+}
+
+h3 {
+    color: hsl(71, 73%, 54%);
+    font-size: 1rem;
+    margin: 1.8rem auto;
+}
+
+p {
+    font-size: .9rem;
+}
+
+#join {
+    min-height: 33vh;
+}
+
+#join p {
+    color: hsl(180, 1%, 15%);
+    line-height: 1.8;
+}
+
+#pricing {
+    background-color: hsl(179, 62%, 43%);
+    min-height: 28vh;
+}
+
+#pricing div {
+    display: flex;
+    flex-direction: row;
+    margin: 1.2rem auto .7rem;
+    align-items: center;
+}
+
+.pricing-dollar {
+    font-size: 2.2em;
+    margin-right: 1rem;
+}
+
+.pricing-month {
+    font-size: 1rem;
+}
+
+.pricing-info {
+    font-size: 1rem;
+    margin: 1vh 0 3vh;
+}
+
+button {
+    background-color: hsl(71, 73%, 54%);
+    border: 0.1px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 8px hsl(180, 1%, 15%);
+    color: hsl(0, 0%, 100%);
+    font-size: 1rem;
+    padding: 2vh;
+    width: 100%;
+}
+
+#features {
+    min-height: 28vh;
+    line-height: 1.5;
+}
+
+#features p {
+    margin-top: 1.2rem;
+}
+
+/* Multiple assignments */
+.cyan {
+    background-color: hsl(179, 62%, 43%);
+}
+
+.pad {
+    padding: 1.5rem 1rem 1.5rem 1.3rem;
+}
+
+.title {
+    margin-bottom: 2vh;
+}
+
+.opacity {
+    opacity: .8;
+}
+
+/* Media query */
+@media screen and (min-width: 720px) {
+    body {
+        margin: auto;
+    }
+    main {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin: auto;
+        width: 640px;
+    }
+    h3 {
+        font-size: 1.125rem;
+        margin: 1.8rem auto 1rem;
+    }
+    #join p {
+        font-size: 1rem;
+    }
+    #join {
+        grid-column: 1 / span 2;
+        min-height: 220px;
+    }
+    #pricing {
+        grid-column: 1;
+        min-height: 255px;
+    }
+    #features {
+        grid-column: 2;
+        min-height: 255px;
+    }
+    .pad {
+        padding: 2.5rem;
+    }
+    #features p {
+        margin-top: .9rem;
+    }
+}
