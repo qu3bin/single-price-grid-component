@@ -1,9 +1,37 @@
+/* RESET */
 * {
+    border: 0;
     box-sizing: border-box;
+    font: inherit;
+    font-size: 100%;
     margin: 0;
     padding: 0;
+    vertical-align: baseline;
 }
 
+body {
+    line-height: 1;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+}
+
+ul {
+    list-style: none;
+}
+
+/* STYLE */
 body {
     background-color: hsl(204, 43%, 93%);
     color: hsl(0, 0%, 100%);
@@ -27,28 +55,31 @@ article {
 
 h1 {
     color: hsl(179, 62%, 43%);
-    font-size: 1.3rem;
+    font-size: 1.4rem;
+    font-weight: 700;
 }
 
 h2 {
     font-size: 1.2rem;
+    font-weight: 700;
 }
 
-h3 {
-    color: hsl(71, 73%, 54%);
-    font-size: 1rem;
-    margin: 1.8rem auto;
-}
-
-p {
+p, li {
     font-size: .9rem;
+}
+
+.second {
+    color: hsl(71, 73%, 54%);
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin: 1.8rem auto;
 }
 
 #join {
     min-height: 33vh;
 }
 
-#join p {
+.third {
     color: hsl(180, 1%, 15%);
     line-height: 1.8;
 }
@@ -79,14 +110,16 @@ p {
     margin: 1vh 0 3vh;
 }
 
-button {
+.signup {
     background-color: hsl(71, 73%, 54%);
     border: 0.1px;
     border-radius: 5px;
     box-shadow: 2px 2px 8px hsl(180, 1%, 15%);
     color: hsl(0, 0%, 100%);
+    display: block;
     font-size: 1rem;
-    padding: 2vh;
+    padding: 2.5vh;
+    text-align: center;
     width: 100%;
 }
 
@@ -105,11 +138,7 @@ button {
 }
 
 .pad {
-    padding: 1.5rem 1rem 1.5rem 1.3rem;
-}
-
-.title {
-    margin-bottom: 2vh;
+    padding: 1.51rem;
 }
 
 .opacity {
@@ -118,20 +147,17 @@ button {
 
 /* Media query */
 @media screen and (min-width: 720px) {
-    body {
-        margin: auto;
-    }
     main {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         margin: auto;
         width: 640px;
     }
-    h3 {
-        font-size: 1.125rem;
+    .second {
+        font-size: 1.1rem;
         margin: 1.8rem auto 1rem;
     }
-    #join p {
+    .third {
         font-size: 1rem;
     }
     #join {
